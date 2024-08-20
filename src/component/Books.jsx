@@ -93,27 +93,27 @@ const Books = () => {
     useEffect(() => {
         // Fetch count when filters change
         if (filters) {
-            countRefetch();
+             countRefetch();
         }
-    }, [filters, countRefetch]);
+     }, [filters, countRefetch]);
 
-    useEffect(() => {
+     useEffect(() => {
         refetch();
-    }, [
+     }, [
 
         sort, currentPage, limit, refetch]);
 
-    if (isLoading || countLoading) {
+      if (isLoading || countLoading) {
         return <div className="flex justify-center items-center mt-8 mb-16">
 
             <ColorRing
                 visible={true}
-                height="80"
+                 height="80"
                 width="80"
                 ariaLabel="color-ring-loading"
-                wrapperStyle={{}}
-                wrapperClass="color-ring-wrapper"
-                colors={['#e15b64', '#f47e60', '#f8b26a', '#abbd81', '#849b87']}
+                 wrapperStyle={{}}
+                 wrapperClass="color-ring-wrapper"
+                 colors={['#e15b64', '#f47e60', '#f8b26a', '#abbd81', '#849b87']}
             />
         </div>;
     }
@@ -121,7 +121,7 @@ const Books = () => {
     return (
         <div className="relative mt-16 flex">
             {/* Sidebar */}
-            <div className={`fixed inset-0 bg-gray-800 bg-opacity-50 z-40 ${isSidebarOpen ? "block" : "hidden"}`} onClick={toggleSidebar}></div>
+             <div className={`fixed inset-0 bg-gray-800 bg-opacity-50 z-40 ${isSidebarOpen ? "block" : "hidden"}`} onClick={toggleSidebar}></div>
             <div className={`fixed top-0 right-0 h-full w-64 bg-gray-100 p-6 shadow-lg transform ${isSidebarOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out z-50 overflow-y-auto`}>
                 <button
                     onClick={toggleSidebar}
