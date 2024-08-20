@@ -42,15 +42,13 @@ const Books = () => {
 
     const handleApplyFilters = () => {
         setFilters({
-
-
-            category,
-            publication,
-            priceRange,
+             category,
+             publication,
+             priceRange,
         });
-        setIsSidebarOpen(false);
-        setCurrentPage(1);
-        countRefetch();
+           setIsSidebarOpen(false);
+         setCurrentPage(1);
+         countRefetch();
     };
 
     const handlePriceChange = (e) => {
