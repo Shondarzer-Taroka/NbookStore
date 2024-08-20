@@ -41,7 +41,7 @@ const Navbar = () => {
           </ul>
         </div>
         <a className="btn font-bold md:text-3xl btn-ghost text-xl ">
-          NBook <span className="text-[#aa1936]">Store</span>
+          <span className="text-[#aa19a8]">NBook</span> <span className="text-[#19aa2c]">Store</span>
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
