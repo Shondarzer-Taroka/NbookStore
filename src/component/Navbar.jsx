@@ -10,22 +10,14 @@ import { AuthContext } from "../provider/AuthProvider";
 
 const Navbar = () => {
 
-
-
-
-
-
   const { user, logOut } = useContext(AuthContext)
   const logOutHandle = () => {
-
     logOut()
-
-
   }
 
 
 
-  const nav = <>
+   const nav = <>
 
     <li className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 "><NavLink to={'/'}>Home</NavLink></li>
     <li className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 "><NavLink to={'/mycart'}>My Cart</NavLink></li>
@@ -49,7 +41,7 @@ const Navbar = () => {
           </ul>
         </div>
         <a className="btn font-bold md:text-3xl btn-ghost text-xl ">
-          Nbook <span className="text-[#aa1936]">Store</span>
+          NBook <span className="text-[#aa1936]">Store</span>
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
