@@ -6,15 +6,15 @@ import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa';
 const Book = ({ book }) => {
     const { image, title, author, description, rating, price, category, publicationDate, publication } = book;
 
-    const handleAddToCart = () => {
-        toast.info('This Feature coming soon!', {
-            position: "top-right",
+     const handleAddToCart = () => {
+         toast.info('This Feature coming soon!', {
+             position: "top-right",
             autoClose: 3000,
-            hideProgressBar: false,
-            closeOnClick: true,
+             hideProgressBar: false,
+             closeOnClick: true,
             pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
+             draggable: true,
+             progress: undefined,
         });
     };
 
@@ -22,18 +22,18 @@ const Book = ({ book }) => {
         toast.info('Feature coming soon!', {
             position: "top-right",
             autoClose: 3000,
-            hideProgressBar: false,
+             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
-            draggable: true,
+             draggable: true,
             progress: undefined,
         });
     };
 
     const renderStars = (rating) => {
         const fullStars = Math.floor(rating);
-        const hasHalfStar = rating % 1 >= 0.5;
-        const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+         const hasHalfStar = rating % 1 >= 0.5;
+         const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
 
         return (
             <div className="flex items-center justify-center">
