@@ -63,11 +63,11 @@ const Books = () => {
         currentPage(1)
     };
 
-    const searchHandle = (e) => {
+    const  searchHandle = (e) => {
         e.preventDefault();
-        const searchValue = e.target.search.value;
-        setSearch(searchValue);
-        setCurrentPage(1);
+         const searchValue = e.target.search.value;
+         setSearch(searchValue);
+         setCurrentPage(1);
 
 
     };

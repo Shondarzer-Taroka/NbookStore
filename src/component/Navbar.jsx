@@ -64,7 +64,7 @@ const Navbar = () => {
           <div className="navbar-end">
             <div className='flex items-center gap-4'>
               <Link to={'/login'}>
-                <button className='btn font-raleway bg-[#aa1936] text-white block text-center'>  Login </button></Link>
+                <button className='btn font-raleway bg-[#19aa36] text-white block text-center'>  Login </button></Link>
             </div>
           </div>
         }
