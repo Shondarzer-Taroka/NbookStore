@@ -51,19 +51,19 @@ const Book = ({ book }) => {
     return (
         <div className="rounded overflow-hidden bg-base-100 border m-4 bg-white relative shadow-lg">
             <ToastContainer />
-            <img className="w-full h-[250px] object-cover border-[#126456] border-2" src={image} alt={title} />
+            <img className="w-full h-[250px] object-cover border-[#641213] border-2" src={image} alt={title} />
 
             <div title='Discount is coming soon' className="absolute top-0 left-0 bg-red-600 text-white px-3 py-1 text-sm font-bold rounded-br-lg transform  shadow-lg">
                 {publication} publication
             </div>
 
-            <div className='bg-[#126456] flex justify-between font-work-sense px-4 py-2 text-white'>
+            <div className='bg-[#644912] flex justify-between font-work-sense px-4 py-2 text-white'>
                 <h1 className='flex items-center gap-2'>  ${price}</h1>
                 <h1 className='flex items-center'>{category}</h1>
             </div>
 
             <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2 text-center text-[#aa1936]">
+                <div className="font-bold text-xl mb-2 text-center text-[#5a19aa]">
                     {title}
                 </div>
                 <div className="text-gray-700 text-center mb-2">
@@ -94,20 +94,20 @@ const Book = ({ book }) => {
                     <span className="text-lg text-gray-500">${price}</span>
                 </div> */}
 
-                <div className="text-gray-700 text-center mb-4 px-2">
+                {/* <div className="text-gray-700 text-center mb-4 px-2">
                     <p>{description}</p>
-                </div>
+                </div> */}
 
                 <div className="flex mt-4">
                     <button
                         onClick={handleAddToCart}
-                        className="w-1/2 mr-2 bg-[#aa1936] hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-[#aa1936] focus:ring-opacity-50"
+                        className="w-1/2 mr-2 bg-[#aa1992] hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-[#aa1936] focus:ring-opacity-50"
                     >
                         Add to Cart
                     </button>
                     <button
                         onClick={handleBuyNow}
-                        className="w-1/2 ml-2 bg-[#aa1936] hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-[#aa1936] focus:ring-opacity-50"
+                        className="w-1/2 ml-2 bg-[#19aa23] hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-[#aa1936] focus:ring-opacity-50"
                     >
                         Buy Now
                     </button>
