@@ -71,10 +71,10 @@ const Books = () => {
     };
 
     const sortHandle = (e) => {
-        const selectedSort = e.target.value;
-        setSort(selectedSort);
-        setCurrentPage(1);
-    };
+         const selectedSort = e.target.value;
+         setSort(selectedSort);
+           setCurrentPage(1);
+       };
 
     const totalBooksLength = count;
     const pagesNumber = !countLoading && Math.ceil(totalBooksLength / limit);
