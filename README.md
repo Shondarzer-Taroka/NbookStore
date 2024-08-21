@@ -1,8 +1,8 @@
-# Book Beacon
+# NBookStore
 
-[Live Link](https://book-beacon-188a6.web.app/)
+[Live Link](https://nbookstore-889b8.web.app)
 
-[Server side repo link](https://github.com/rakib3719/book-beacon-server-side)
+[Server side repo link](https://github.com/Shondarzer-Taroka/NBookStoreServer)
 
 
 
@@ -31,7 +31,7 @@ Make sure you have the following installed:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/rakib3719/book-beacon-client-side
+   git clone https://github.com/Shondarzer-Taroka/NbookStore
    cd book-beacon-client-side
    npm install
    npm run dev
